@@ -1,0 +1,13 @@
+:host {
+  display: flex;
+  height: 100%;
+
+  aside {
+    display: flex;
+    width: 100%;
+
+    > app-main-infos, app-detailled-infos {
+      flex: 1;
+    }
+  }
+}

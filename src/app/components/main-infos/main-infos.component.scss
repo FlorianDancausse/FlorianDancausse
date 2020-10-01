@@ -1,0 +1,58 @@
+@import 'src/assets/scss/custom-theme.scss';
+
+:host {
+  color: $light-text;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  /** start background animation */
+  background: linear-gradient(110deg, #1b28df, #e25757, #1b28df);
+  background-size: 400% 400%;
+  -webkit-animation: gradientBackground 30s ease infinite;
+  -moz-animation: gradientBackground 30s ease infinite;
+  -o-animation: gradientBackground 30s ease infinite;
+  animation: gradientBackground 30s ease infinite;
+  /** end background animation */
+
+  /** this class is applied many times */
+  .logos {
+    display: flex;
+    justify-content: center;
+
+    > a {
+      display: flex;
+      justify-content: center;
+      margin-right: 16px;
+    }
+
+    > img:not(:last-child) {
+      margin-right: 16px;
+    }
+  }
+
+  > .hello-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+
+    > h1 {
+      margin: 0;
+    }
+  }
+
+  > .languages-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 16px;
+  }
+
+  > .socials-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
