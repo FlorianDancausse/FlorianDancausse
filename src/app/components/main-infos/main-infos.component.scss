@@ -41,14 +41,19 @@
     }
   }
 
+  /** this class is applied many times */
+  .logos {
+    margin: 16px 0;
+  }
+
   > .hello-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 16px;
 
-    > h1 {
-      margin: 0;
+    > .title {
+      margin-bottom: 8px;
     }
   }
 
@@ -56,7 +61,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 16px;
   }
 
   > .socials-container {
