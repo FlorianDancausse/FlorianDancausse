@@ -1,5 +1,6 @@
 :host {
   color: #ffffff;
+  text-align: center;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,10 +51,11 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 16px;
+    margin: 16px 0;
 
     > .title {
       margin-bottom: 8px;
+      line-height: 1em;
     }
   }
 

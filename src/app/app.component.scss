@@ -3,8 +3,9 @@
   height: 100%;
 
   aside {
+    flex: 1;
     display: flex;
-    width: 100%;
+    flex-wrap: wrap;
 
     > app-main-infos, app-detailled-infos {
       flex: 1;
