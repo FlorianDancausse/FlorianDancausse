@@ -19,6 +19,7 @@
   .logos {
     display: flex;
     justify-content: center;
+    margin: 1.6em 2.4em;
 
     > a {
       position: relative;
@@ -40,11 +41,6 @@
     > img:not(:last-child) {
       margin-right: 16px;
     }
-  }
-
-  /** this class is applied many times */
-  .logos {
-    margin: 16px 0;
   }
 
   > .hello-text {
