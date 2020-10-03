@@ -9,7 +9,9 @@
 
     > app-main-infos, app-detailled-infos {
       flex: 1;
-      padding: 0 1.6em;
+      min-height: 100%;
+      padding: 2.4em 1.6em;
+      box-sizing: border-box;
     }
   }
 }
