@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 @import 'src/assets/scss/custom-theme.scss';
 @import 'src/assets/scss/animation-gradient-background.scss';
+@import 'src/assets/scss/animation-bounce.scss';
 @import 'src/assets/scss/custom-mat-tooltip.scss';
 
-html, body { height: 100%; }
+html, body { height: 100%; scroll-behavior: smooth;}
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: $dark-background;}
 
 span {

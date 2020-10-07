@@ -4,6 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
+    "start:hosting": "ng serve --host 0.0.0.0",
     "build": "ng build --prod --output-path docs --base-href page_cv",
     "test": "ng test",
     "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
