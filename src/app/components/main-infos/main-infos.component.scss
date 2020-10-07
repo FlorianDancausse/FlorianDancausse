@@ -69,15 +69,6 @@
 
   > a {
     display: none;
-    position: absolute;
-    bottom: 16px;
-
-    > mat-icon {
-      color: #ffffff;
-      font-size: 80px;
-      height: 80px;
-      width: 80px;
-    }
   }
 }
 
@@ -85,6 +76,19 @@
   :host {
     > a {
       display: block;
+      position: absolute;
+      bottom: 16px;
+      animation-name: bounce;
+      animation-duration: 2s;
+      animation-timing-function: ease;
+      animation-iteration-count: infinite;
+
+      > mat-icon {
+        color: #ffffff;
+        font-size: 80px;
+        height: 80px;
+        width: 80px;
+      }
     }
   }
 }
