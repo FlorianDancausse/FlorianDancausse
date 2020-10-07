@@ -2,16 +2,23 @@
   display: flex;
   height: 100%;
 
-  aside {
+  > aside {
     flex: 1;
     display: flex;
-    flex-wrap: wrap;
 
     > app-main-infos, app-detailled-infos {
       flex: 1;
       min-height: 100%;
       padding: 2.4em 1.6em;
       box-sizing: border-box;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  :host {
+    > aside {
+      flex-direction: column;
     }
   }
 }
