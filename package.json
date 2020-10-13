@@ -1,11 +1,11 @@
 {
-  "name": "page-cv",
+  "name": "portfolio",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "start:hosting": "ng serve --host 0.0.0.0",
-    "build": "ng build --prod --output-path docs --base-href page_cv",
+    "build": "ng build --prod --output-path docs --base-href /",
     "test": "ng test",
     "test:headless": "ng test --watch=false --browsers=ChromeHeadless",
     "lint": "ng lint",
