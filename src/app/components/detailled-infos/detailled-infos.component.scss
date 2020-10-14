@@ -1,8 +1,7 @@
+@import '/src/assets/scss/utils.scss';
+
 :host {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  @include custom-flex(column, center, center);
 
   > .container {
     margin-top: 24px;
@@ -18,15 +17,13 @@
       margin: 0 5%;
 
       > .sub-title-container {
-        display: flex;
-        justify-content: space-between;
+        @include custom-flex(initial, space-between);
 
         > .sub-title {
           color: #ffffff;
 
           &.date {
-            display: flex;
-            align-items: center;
+            @include custom-flex(initial, initial, center);
             font-size: 1.2em;
           }
 

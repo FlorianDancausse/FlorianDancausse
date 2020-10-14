@@ -1,78 +1,84 @@
-<div class="hello-text">
-  <span class="title">Hello, I'm Florian Dancausse</span>
-  <p>a Web Developer</p>
-</div>
+<div class="header"></div>
 
-<div class="languages-container">
-  <span class="sub-title">I'm used to coding with these languages / frameworks</span>
-  <div class="logos">
-    <img
-      #typescriptLogo="matTooltip"
-      src="assets/img/typescript_logo.svg"
-      alt="typescript logo"
-      width="50px"
-      matTooltip="TypeScript"
-      matTooltipClass="custom-tooltip"
-      matTooltipTouchGestures="off"
-      (click)="typescriptLogo.show()"
-    />
-    <img
-      #angularLogo="matTooltip"
-      src="assets/img/angular_logo.svg"
-      alt="angular logo"
-      width="50px"
-      matTooltip="Angular"
-      matTooltipClass="custom-tooltip"
-      matTooltipTouchGestures="off"
-      (click)="angularLogo.show()"
-    />
-    <img
-      #nodejsLogo="matTooltip"
-      src="assets/img/nodejs_logo.svg"
-      alt="nodejs logo"
-      width="50px"
-      matTooltip="NodeJS"
-      matTooltipClass="custom-tooltip"
-      matTooltipTouchGestures="off"
-      (click)="nodejsLogo.show()"
-    />
-    <img
-      #nestjsLogo="matTooltip"
-      src="assets/img/nestjs_logo.svg"
-      alt="nestjs logo"
-      width="50px"
-      matTooltip="NestJS"
-      matTooltipClass="custom-tooltip"
-      matTooltipTouchGestures="off"
-      (click)="nestjsLogo.show()"
-    />
+<div class="center">
+  <div class="container self">
+    <span class="title">Hello, I'm Florian Dancausse</span>
+    <p>a Web Developer</p>
+  </div>
+
+  <div class="container languages">
+    <span class="sub-title">I'm used to coding with these languages / frameworks</span>
+    <div class="logos">
+      <img
+        #typescriptLogo="matTooltip"
+        src="assets/img/typescript_logo.svg"
+        alt="typescript logo"
+        width="50px"
+        matTooltip="TypeScript"
+        matTooltipClass="custom-mat-tooltip"
+        matTooltipTouchGestures="off"
+        (click)="typescriptLogo.show()"
+      />
+      <img
+        #angularLogo="matTooltip"
+        src="assets/img/angular_logo.svg"
+        alt="angular logo"
+        width="50px"
+        matTooltip="Angular"
+        matTooltipClass="custom-mat-tooltip"
+        matTooltipTouchGestures="off"
+        (click)="angularLogo.show()"
+      />
+      <img
+        #nodejsLogo="matTooltip"
+        src="assets/img/nodejs_logo.svg"
+        alt="nodejs logo"
+        width="50px"
+        matTooltip="NodeJS"
+        matTooltipClass="custom-mat-tooltip"
+        matTooltipTouchGestures="off"
+        (click)="nodejsLogo.show()"
+      />
+      <img
+        #nestjsLogo="matTooltip"
+        src="assets/img/nestjs_logo.svg"
+        alt="nestjs logo"
+        width="50px"
+        matTooltip="NestJS"
+        matTooltipClass="custom-mat-tooltip"
+        matTooltipTouchGestures="off"
+        (click)="nestjsLogo.show()"
+      />
+    </div>
+  </div>
+
+  <div class="container socials">
+    <span class="sub-title">Want to talk or check my code ?</span>
+    <div class="logos">
+      <a
+        href="https://www.linkedin.com/in/floriandancausse"
+        target="_blank"
+        matTooltip="LinkedIn"
+        matTooltipClass="custom-mat-tooltip"
+        matTooltipTouchGestures="off"
+      >
+        <img src="assets/img/linkedin_logo.png" alt="linkedin logo" width="50px"/>
+      </a>
+      <a
+        href="https://github.com/FlorianDancausse"
+        target="_blank"
+        matTooltip="GitHub"
+        matTooltipClass="custom-mat-tooltip"
+        matTooltipTouchGestures="off"
+      >
+        <img src="assets/img/github_logo.png" alt="github logo" width="50px" />
+      </a>
+    </div>
   </div>
 </div>
 
-<div class="socials-container">
-  <span class="sub-title">Want to talk or check my code ?</span>
-  <div class="logos">
-    <a
-      href="https://www.linkedin.com/in/floriandancausse"
-      target="_blank"
-      matTooltip="LinkedIn"
-      matTooltipClass="custom-tooltip"
-      matTooltipTouchGestures="off"
-    >
-      <img src="assets/img/linkedin_logo.png" alt="linkedin logo" width="50px"/>
-    </a>
-    <a
-      href="https://github.com/FlorianDancausse"
-      target="_blank"
-      matTooltip="GitHub"
-      matTooltipClass="custom-tooltip"
-      matTooltipTouchGestures="off"
-    >
-      <img src="assets/img/github_logo.png" alt="github logo" width="50px" />
-    </a>
-  </div>
+<div class="footer">
+  <a href="./#scrollHook">
+    <mat-icon>expand_more</mat-icon>
+  </a>
 </div>
-
-<a href="./#scrollHook">
-  <mat-icon>expand_more</mat-icon>
-</a>
