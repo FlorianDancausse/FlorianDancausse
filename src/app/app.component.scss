@@ -1,24 +1,16 @@
 :host {
   display: flex;
-  height: 100%;
 
-  > aside {
+  > app-main-infos, app-detailled-infos {
     flex: 1;
-    display: flex;
-
-    > app-main-infos, app-detailled-infos {
-      flex: 1;
-      min-height: 100%;
-      padding: 24px 16px;
-      box-sizing: border-box;
-    }
+    min-height: calc(100 * var(--vh));
+    padding: 24px 16px;
+    box-sizing: border-box;
   }
 }
 
 @media (max-width: 1024px) {
   :host {
-    > aside {
-      flex-direction: column;
-    }
+    flex-direction: column;
   }
 }
