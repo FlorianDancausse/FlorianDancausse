@@ -1,8 +1,7 @@
+@import '/src/assets/scss/utils.scss';
+
 :host {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  @include custom-flex(column, space-between, center);
   text-align: center;
   color: #ffffff;
 
@@ -17,16 +16,13 @@
 
   /** this class is applied many times */
   .logos {
-    display: flex;
-    justify-content: center;
+    @include custom-flex(initial, center);
     margin: 16px 24px;
 
     > a {
-      position: relative;
-      display: flex;
-      justify-content: center;
+      @include custom-flex(initial, center);
+      @include transition(opacity, 0.25s);
       opacity: 1;
-      transition: opacity 0.25s;
 
       &:not(:last-child) {
         margin-right: 16px;
@@ -44,28 +40,17 @@
   }
 
   > .center {
-    > .hello-text {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 16px 0;
+    > .container {
+      @include custom-flex(column, initial, center);
 
-      > .title {
-        margin-bottom: 8px;
-        line-height: 1em;
+      &.self {
+        margin: 16px 0;
+
+        > .title {
+          margin-bottom: 8px;
+          line-height: 1em;
+        }
       }
-    }
-
-    > .languages-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    > .socials-container {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
     }
   }
 
