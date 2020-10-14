@@ -1,10 +1,10 @@
 :host {
-  color: #ffffff;
-  text-align: center;
   display: flex;
-  justify-content: center;
-  align-items: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  color: #ffffff;
 
   /** start background animation */
   background: linear-gradient(110deg, #1b28df, #e25757, #1b28df);
@@ -43,51 +43,55 @@
     }
   }
 
-  > .hello-text {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 16px 0;
+  > .center {
+    > .hello-text {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 16px 0;
 
-    > .title {
-      margin-bottom: 8px;
-      line-height: 1em;
+      > .title {
+        margin-bottom: 8px;
+        line-height: 1em;
+      }
+    }
+
+    > .languages-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    > .socials-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
   }
 
-  > .languages-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  > .socials-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  > a {
-    display: none;
+  > .footer {
+    a {
+      display: none;
+    }
   }
 }
 
 @media (max-width: 1024px) {
   :host {
-    > a {
-      display: block;
-      position: absolute;
-      bottom: 16px;
-      animation-name: bounce;
-      animation-duration: 2s;
-      animation-timing-function: ease;
-      animation-iteration-count: infinite;
+    > .footer {
+      a {
+        display: block;
+        animation-name: bounce;
+        animation-duration: 2s;
+        animation-timing-function: ease;
+        animation-iteration-count: infinite;
 
-      > mat-icon {
-        color: #ffffff;
-        font-size: 80px;
-        height: 80px;
-        width: 80px;
+        > mat-icon {
+          color: #ffffff;
+          font-size: 80px;
+          height: 80px;
+          width: 80px;
+        }
       }
     }
   }
