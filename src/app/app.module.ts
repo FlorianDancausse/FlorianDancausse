@@ -1,26 +1,29 @@
+/** angular */
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatIconModule } from '@angular/material/icon';
-
-import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+/** end angular */
+
+/** classes */
+import { AppComponent } from './app.component';
 import { MainInfosComponent } from './components/main-infos/main-infos.component';
-import { DetailledInfosComponent } from './components/detailled-infos/detailled-infos.component';
+import { AppRoutingModule } from './app.module.routing';
+/** end classes */
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainInfosComponent,
-    DetailledInfosComponent
+    MainInfosComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
     MatTooltipModule,
     MatIconModule
   ],
-  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
