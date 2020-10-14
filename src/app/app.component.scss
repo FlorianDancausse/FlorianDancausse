@@ -2,13 +2,6 @@
 
 :host {
   @include display-flex();
-
-  > app-main-infos, app-detailled-infos {
-    @include flex(1);
-    min-height: calc(100 * var(--vh));
-    padding: 24px 16px;
-    box-sizing: border-box;
-  }
 }
 
 @media (max-width: 1024px) {

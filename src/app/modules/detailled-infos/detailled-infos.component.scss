@@ -1,7 +1,11 @@
 @import '/src/assets/scss/utils.scss';
 
 :host {
+  @include flex(1);
   @include custom-flex(column, center, center);
+  min-height: calc(100 * var(--vh));
+  padding: 24px 16px;
+  box-sizing: border-box;
 
   > .container {
     margin-top: 24px;
