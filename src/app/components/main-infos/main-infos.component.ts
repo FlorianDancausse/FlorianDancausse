@@ -12,6 +12,9 @@ import { ImageWithTooltipDataInterface } from 'src/app/shared/components/image-w
   styleUrls: ['./main-infos.component.scss']
 })
 export class MainInfosComponent {
+  /**
+   * The language logo image list
+   */
   public languageLogoImages: ImageWithTooltipDataInterface[] = [
    { alternative: 'typescript logo', source: 'assets/img/typescript_logo.svg', tooltipText: 'TypeScript' },
    { alternative: 'angular logo', source: 'assets/img/angular_logo.svg', tooltipText: 'Angular' },
@@ -19,12 +22,18 @@ export class MainInfosComponent {
    { alternative: 'nestjs logo', source: 'assets/img/nestjs_logo.svg', tooltipText: 'NestJS' },
   ];
 
+  /**
+   * The linkedin logo image
+   */
   public linkedinImage: ImageWithTooltipDataInterface = {
     alternative: 'linkedin logo',
     source: 'assets/img/linkedin_logo.png',
     tooltipText: 'LinkedIn'
   };
 
+  /**
+   * The github logo image
+   */
   public githubImage: ImageWithTooltipDataInterface = {
     alternative: 'github logo',
     source: 'assets/img/github_logo.png',

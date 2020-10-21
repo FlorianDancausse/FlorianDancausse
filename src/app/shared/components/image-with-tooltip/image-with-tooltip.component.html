@@ -2,8 +2,8 @@
   #toolTip="matTooltip"
   matTooltipClass="custom-mat-tooltip"
   matTooltipTouchGestures="off"
-  [alt]="data.alternative"
-  [src]="data.source"
-  [matTooltip]="data.tooltipText"
+  [alt]="data?.alternative"
+  [src]="data?.source"
+  [matTooltip]="data?.tooltipText"
   (click)="toolTip.show()"
 />
