@@ -10,12 +10,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { MainInfosComponent } from './components/main-infos/main-infos.component';
 import { AppRoutingModule } from './app.module.routing';
+import { ImageWithTooltipComponent } from './shared/components/image-with-tooltip/image-with-tooltip.component';
 /** end classes */
 
 @NgModule({
   declarations: [
     AppComponent,
-    MainInfosComponent
+    MainInfosComponent,
+    ImageWithTooltipComponent
   ],
   imports: [
     BrowserModule,
