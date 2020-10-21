@@ -1,9 +1,6 @@
 /** angular */
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-import { MatIconModule } from '@angular/material/icon';
-import { MatTooltipModule } from '@angular/material/tooltip';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { ImageWithTooltipComponent } from 'src/app/shared/components/image-with-tooltip/image-with-tooltip.component';
+import { AppModule } from 'src/app/app.module';
 /** end angular */
 
 /** classes */
@@ -16,8 +13,7 @@ describe('MainInfosComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [MatTooltipModule, MatIconModule, BrowserAnimationsModule],
-      declarations: [ MainInfosComponent, ImageWithTooltipComponent ]
+      imports: [AppModule],
     })
     .compileComponents();
   });
